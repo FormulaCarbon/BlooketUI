@@ -43,7 +43,7 @@ function loadGUI() {
 
 
     let element = document.createElement('div');
-    element.innerHTML = `<div id="GUI"> <style>details > summary{cursor: pointer; transition: 1s; list-style: circle;}.hack{border: none; background: hsl(100, 0%, 20%); padding: 7px; margin: 5px; width: 70%; color: white; transition: 0.1s; border-radius: 5px; cursor: pointer;}.hack:hover{background: hsl(0, 1%, 31%);}</style> <div style="cursor: all-scroll; padding-top: 2px; font-size: 1.5rem; text-align: center;">BlooketUI<button id="gui-" style="background: black; height: 45px; width: 45px; border: none; cursor: pointer; position: absolute; top: -10px; right: 90%; font-size: 2.5rem; border-radius: 10px; font-family: Nunito; font-weight: bolder; padding-top: -10px; padding-right: -15px; color: white;">-</button> <button id="guiX" style="background: black; height: 45px; width: 45px; border: none; cursor: pointer; position: absolute; top: -10px; right: -10px; font-size: 1.5rem; border-radius: 10px; font-family: Nunito; font-weight: bolder; padding-top: 10px; padding-right: 15px; color: white;">X</button> </div><div style="display: block; margin: 10px; min-height: 70px;"> <div id="curPage">no game detected</div><div id="name">name: null</div><div>(press e to hide)</div><details open=""> <summary style="padding: 10px; font-size: 1.5em; font-weight: bolder">Main</summary> <button id="token" class="hack">Get Daily Rewards</button> <button id="spoof" class="hack">Spoof Blooks</button> <button id="open" class="hack">Spam Open Boxes</button> <button id="sell" class="hack">Auto Sell Dupes</button> <button id="correct" class="hack">Every Answer Correct</button> </details><br><div id="LoadedGame"> </div><div> Open source on <a href="https://github.com/Blooketware/BlooketUI">GitHub</a></div></div>`;
+    element.innerHTML = `<div id="GUI"> <style>details > summary{cursor: pointer; transition: 1s; list-style: circle;}.hack{border: none; background: hsl(0, 0%, 20%); padding: 7px; margin: 5px; width: 70%; color: white; transition: 0.1s; border-radius: 5px; cursor: pointer;}.hack:hover{background: hsl(0, 1%, 31%);}</style> <div style="cursor: all-scroll; padding-top: 2px; font-size: 1.5rem; text-align: center;">BlooketUI<button id="gui-" style="background: black; height: 45px; width: 45px; border: none; cursor: pointer; position: absolute; top: -10px; right: 90%; font-size: 2.5rem; border-radius: 10px; font-family: Nunito; font-weight: bolder; padding-top: -10px; padding-right: -15px; color: white;">-</button> <button id="guiX" style="background: black; height: 45px; width: 45px; border: none; cursor: pointer; position: absolute; top: -10px; right: -10px; font-size: 1.5rem; border-radius: 10px; font-family: Nunito; font-weight: bolder; padding-top: 10px; padding-right: 15px; color: white;">X</button> </div><div style="display: block; margin: 10px; min-height: 70px;"> <div id="curPage">no game detected</div><div id="name">name: null</div><div>(press e to hide)</div><details open=""> <summary style="padding: 10px; font-size: 1.5em; font-weight: bolder">Main</summary> <button id="token" class="hack">Get Daily Rewards</button> <button id="spoof" class="hack">Spoof Blooks</button> <button id="open" class="hack">Spam Open Boxes</button> <button id="sell" class="hack">Auto Sell Dupes</button> <button id="correct" class="hack">Every Answer Correct</button> </details><br><div id="LoadedGame"> </div><div> Open source on <a href="https://github.com/Blooketware/BlooketUI">GitHub</a></div></div>`;
     element.style = `width: 350px; background: rgb(64, 64, 64); border-radius: 8px; position: absolute; text-align: center; font-family: Nunito; color: white; overflow: hidden; top: 5%; left: 40%;`;
     document.body.appendChild(element);
     var pos1 = 0,
@@ -239,14 +239,14 @@ function allcorrect(event) {
     try {
         let hack = Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner;
         hack.stateNode.questions = [{
-            "text": "The Question",
+            "text": "blooketware moment",
             "answers": [
-                "The Answer",
-                "The Other Answer"
+                "blooketware on top",
+                "blooketware on top2"
             ],
             "correctAnswers": [
-                "The Answer",
-                "The Other Answer"
+                "blooketware on top",
+                "blooketware on top2"
             ],
             "number": 1,
             "random": false,
@@ -255,18 +255,18 @@ function allcorrect(event) {
             "audio": null
         }]
         hack.stateNode.freeQuestions = [{
-            "text": "The Question",
+            "text": "blooketware moment",
             "answers": [
-                "The Answer",
-                "The Other Answer"
+                "blooketware on top",
+                "blooketware on top2"
             ],
             "correctAnswers": [
-                "The Answer",
-                "The Answer"
+                "blooketware on top",
+                "blooketware on top2"
             ],
             "number": 1,
             "random": false,
-           "timeLimit": "999",
+            "timeLimit": "999",
             "image": "https://media.blooket.com/image/upload/c_limit,f_auto,h_250,fl_lossy,q_auto:low/v1650444812/vr9fwibbp1mm0ge8hbuz.jpg",
             "audio": null
         }]
@@ -464,7 +464,7 @@ async function handleData(type) {
         game.innerHTML = mode;
         nameElement.innerHTML = `Name: ${Name}`;
     } else {
-        console.error("handle data incorrect type")
+        console.error("handle data incorect type")
     }
 }
 
@@ -1071,4 +1071,4 @@ addUtils();
 setInterval(() => {
     CheckGame();
 }, 10000);
-window.alert("Developed by FormulaCarbon (Forked from Smint and Zastix).");
+window.alert("Developed by smint n zastix. Modded by FormulaCarbon.");
