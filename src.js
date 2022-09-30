@@ -388,6 +388,9 @@ function startDebugger(name) {
         case "/defense":
             mode = "Tower Defense"
             break;
+        case "/play/brawl":
+            mode = "Monster Brawl"
+            break;
     }
     const Rundeb = document.getElementById("rundeb")
     const gameinfo = document.getElementById("gameinfo")
@@ -455,6 +458,9 @@ async function handleData(type) {
                 break;
             case "/defense":
                 mode = "Tower Defense"
+                break;
+            case "/play/brawl":
+                mode = "Monster Brawl"
                 break;
         }
         const data = await response.json();
